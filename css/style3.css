@@ -1,0 +1,231 @@
+root {
+  --primary: #a52a2a;
+  --bg: #ffd700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #000000;
+  min-height: 3500px;
+}
+
+/* Navbar */
+.navbar {
+  background-image: url("../img/Logo-header.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 5%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #ffd700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffd700;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  color: #daa520;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content p {
+  color: F8F8FF;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.content {
+  color: #f8f8ff;
+}
+
+/* Profil Section */
+.profil,
+.charming {
+  padding: 12rem 7% 1.4rem;
+}
+
+.profil h2,
+.charming h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: #daa520;
+}
+
+.profil .row {
+  display: flex;
+}
+
+.profil .row .profil-video {
+  flex: 1 1 5rem;
+}
+
+.profil .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.profil .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #daa520;
+}
+
+.profil .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* Charming */
+
+.charming .content p {
+  text-align: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.charming .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+/* Al Qur'an Akbar */
+.charming .row .charming-card {
+  text-align: center;
+}
+
+.charming .row .charming-card img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.charming .row .charming-card .charming-card-title {
+  margin-top: 1.5rem;
+}
+
+.charming .row .charming-card .charming-card-p {
+  margin-top: 1.5rem;
+}
+
+/* Benteng Kuto Besak */
+.charming .row .charming-card2 {
+  text-align: center;
+}
+
+.charming .row .charming-card img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.charming .row .charming-card .charming-card-title2 {
+  margin-top: 1.5rem;
+}
+
+.charming .row .charming-card .charming-card-p2 {
+  margin-top: 1.5rem;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .profil .row {
+    flex-wrap: wrap;
+  }
+
+  .profil .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
